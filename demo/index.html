@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../jquery.ijedtiles.js"></script>
+        <style>
+            code {
+                background-color: transparent;
+                font-family: Consolas,Menlo,Monaco,"Courier New",fixed;
+                line-height: 1.3;
+                background-color: rgba(255, 255, 255, 0.6);
+                border: 1px dashed #999999;
+                display: block;
+                padding: 0.5em;
+                font-size: 0.8em;
+                margin-right: 1em;
+                max-width: 500px;
+            }
+
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $('#ijed-box').ijedTiles();
+            });
+        </script>
+    </head>
+    <body>
+        <h1>jQuery ijedTiles</h1>
+
+        <p>A simple and configurable tile of images with a box next to it for the title or/and description of the image.</p>
+
+        <ol>
+            <li>Make sure you have links to jQuery and jquery ijedTiles in your HTML page:
+                <br /><br />
+                <code>
+                    &lt;script src="/path/to/jquery.js"&gt;&lt;/script&gt;
+                    <br />
+                    &lt;script&gt; src="/path/to/jquery.ijedtiles.js"&gt;&lt;/script&gt;
+                </code>
+                <br />
+            </li>
+            <li>Create an empty div and give it an ID e.g. ijed-box:
+                <br /><br />
+                <code>
+                    &lt;div id="ijed-box"&gt;&lt;/div&gt;
+                </code>
+                <br />
+            </li>
+            <li>Add a &lt;script&gt;&lt;/script&gt; tag. Use jQuery to select the element and call ijedTiles() on it. Don't forget the jQuery statement that makes sure the document has been fully loaded before running your script. Your code should look like this:
+                <br /><br />
+                <code>
+                    &lt;script&gt;
+                    <br />
+                    &nbsp;$(function() {
+                    <br />
+                    &nbsp;&nbsp;$('#ijed-box').ijedTiles();
+                    <br />
+                    &nbsp;});
+                    <br />
+                    &lt;/script&gt;
+                </code>
+
+            </li>
+        </ol>
+
+        <p>That's all you have to do to see ijedTiles in action. The script comes with default options including images and you should see something like below. Hover over the images to see the effect.</p>
+
+        <div id="ijed-box"></div>
+
+        <h2>Options</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Option</th>
+                    <th>Description</th>
+                    <th>Data type</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="tilesImgStart">
+                    <td class="option">tilesImgStart</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">boolean</td>
+                    <td class="default-value">true</td>
+                </tr>
+                <tr id="tilesHorizontalTotal">
+                    <td class="option">tilesHorizontalTotal</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">integer</td>
+                    <td class="default-value">4</td>
+                </tr>
+                <tr id="tilesVerticalTotal">
+                    <td class="option">tilesVerticalTotal</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">integer</td>
+                    <td class="default-value">3</td>
+                </tr>
+                <tr id="tilesAlternateRows">
+                    <td class="option">tilesAlternateRows</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">boolean</td>
+                    <td class="default-value">true</td>
+                </tr>
+                <tr id="tileWidth">
+                    <td class="option">tileWidth</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">integer</td>
+                    <td class="default-value">220</td>
+                </tr>
+                <tr id="tileHeight">
+                    <td class="option">tileHeight</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">integer</td>
+                    <td class="default-value">200</td>
+                </tr>
+                <tr id="tilesSeperatorWidth">
+                    <td class="option">tilesSeperatorWidth</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">integer</td>
+                    <td class="default-value">1</td>
+                </tr>
+                <tr id="tilesSeperatorColor">
+                    <td class="option">tilesSeperatorColor</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">string</td>
+                    <td class="default-value">#ffffff</td>
+                </tr>
+                <tr id="tileTextSize">
+                    <td class="option">tileTextSize</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">string</td>
+                    <td class="default-value">1em</td>
+                </tr>
+                <tr id="tileBgColor">
+                    <td class="option">tileBgColor</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">string</td>
+                    <td class="default-value">#336699</td>
+                </tr>
+                <tr id="tileColor">
+                    <td class="option">tileColor</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">string</td>
+                    <td class="default-value">#ffffff</td>
+                </tr>
+                <tr id="tileHoverBgColor">
+                    <td class="option">tileHoverBgColor</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">string</td>
+                    <td class="default-value">#669900</td>
+                </tr>
+                <tr id="tileHoverColor">
+                    <td class="option">tileHoverColor</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">string</td>
+                    <td class="default-value">#ffffff</td>
+                </tr>
+                <tr id="tileSlideSpeed">
+                    <td class="option">tileSlideSpeed</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">integer</td>
+                    <td class="default-value">800</td>
+                </tr>
+                <tr id="items">
+                    <td class="option">items</td>
+                    <td class="description">Description</td>
+                    <td class="data-type">objects array</td>
+                    <td class="default-value">
+                        items : [ {
+            imgSrc : "images/cross.jpg",
+            tileTitle : "Isaiah 53:5",
+            tileText : "He was hurt for our wrong-doing. He was crushed for our sins. He was punished so we would have peace. He was beaten so we would be healed."
+        }, {
+            imgSrc : "images/earth.jpg",
+            tileTitle : "Psalm 24:1-2",
+            tileText : "The earth is the Lord’s, and all that is in it, the world, and all who live in it. For He has built it upon the seas. He has set it upon the rivers."
+        }, {
+            imgSrc : "images/harp.jpg",
+            tileTitle : "Psalm 33:2-3",
+            tileText : "Give thanks to the Lord with harps. Sing praises to Him with a harp of ten strings. Sing to Him a new song. Play well with loud sounds of joy."
+        }, {
+            imgSrc : "images/fire.jpg",
+            tileTitle : "Acts 2:3-4",
+            tileText : "Then they saw tongues which were divided that looked like fire. These came down on each one of them. They were all filled with the Holy Spirit."
+        }, {
+            imgSrc : "images/path.jpg",
+            tileTitle : "Psalm 119:105-106",
+            tileText : "Your Word is a lamp to my feet and a light to my path. I have promised that I will keep Your Law. And I will add strength to this promise."
+        }, {
+            imgSrc : "images/pregnancy.jpg",
+            tileTitle : "Psalm 139:13-14",
+            tileText : "For you created my inmost being; you knit me together in my mother’s womb. I praise you because I am fearfully and wonderfully made; your works are wonderful"
+        } ]
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <p>
+            <a href="sample01.html">Sample 1</a>&nbsp;|&nbsp;<a href="sample02.html">Sample 2</a>&nbsp;|&nbsp;<a href="sample03.html">Sample 3</a>&nbsp;|&nbsp;<a href="sample04.html">Sample 4</a>&nbsp;|&nbsp;<a href="sample05.html">Sample 5</a>
+        </p>
+
+
+    </body>
+</html>

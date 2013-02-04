@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../jquery.ijedtiles.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                var options = {
+                    tilesImgStart : false,
+                    tilesAlternateRows : false,
+                    tilesHorizontalTotal : 6,
+                    tilesVerticalTotal : 4,
+                    tileWidth : 150,
+                    tileHeight : 150,
+                    tileBgColor : '#3D3242',
+                    tileColor : '#ffffff',
+                    tileHoverBgColor : '#7A3E48',
+                    tileHoverColor : '#EECD86',
+                    items : [
+                        {imgSrc : 'images/archery.jpg', tileTitle : 'Archery', tileText : ''},
+                        {imgSrc : 'images/badminton.jpg', tileTitle : 'Badminton', tileText : ''},
+                        {imgSrc : 'images/basketball.jpg', tileTitle : 'Basketball', tileText : ''},
+                        {imgSrc : 'images/cycling.jpg', tileTitle : 'Cycling', tileText : ''},
+                        {imgSrc : 'images/fencing.jpg', tileTitle : 'Fencing', tileText : ''},
+                        {imgSrc : 'images/judo.jpg', tileTitle : 'Judo', tileText : ''},
+                        {imgSrc : 'images/rowing.jpg', tileTitle : 'Rowing', tileText : ''},
+                        {imgSrc : 'images/swimming.jpg', tileTitle : 'Swimming', tileText : ''},
+                        {imgSrc : 'images/tabletennis.jpg', tileTitle : 'Table tennis', tileText : ''},
+                        {imgSrc : 'images/triathlon.jpg', tileTitle : 'Triathlon', tileText : ''},
+                        {imgSrc : 'images/volleyball.jpg', tileTitle : 'Volleyball', tileText : ''},
+                        {imgSrc : 'images/weightlifting.jpg', tileTitle : 'Weightlifting', tileText : ''}
+                    ]
+                };
+
+                $('#ijed-box').ijedTiles(options);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="ijed-box"></div>
+
+        <p>
+            <a href="index.html"><< Back</a>
+        </p>
+
+    </body>
+</html>

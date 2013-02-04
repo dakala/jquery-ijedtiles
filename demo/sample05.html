@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../jquery.ijedtiles.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                var options = {
+                    tilesHorizontalTotal : 4,
+                    tilesVerticalTotal : 3,
+                    //tileWidth : 150,
+                    //tileHeight : 150,
+                    tilesSeperatorWidth : 0,
+                    tileBgColor : '#000044',
+                    tileColor : '#FFFFFF',
+                    tileHoverBgColor : '#003366',
+                    tileHoverColor : '#6699CC',
+                    items : [
+                        {imgSrc : 'images/london.jpg', tileTitle : 'London, UK', tileText : ''},
+                        {imgSrc : 'images/hongkong.jpg', tileTitle : 'Hong Kong, China', tileText : ''},
+                        {imgSrc : 'images/frankfurt.jpg', tileTitle : 'Frankfurt, Germany', tileText : ''},
+                        {imgSrc : 'images/paris.jpg', tileTitle : 'Paris, France', tileText : ''},
+                        {imgSrc : 'images/newyork.jpg', tileTitle : 'New York, USA', tileText : ''},
+                        {imgSrc : 'images/sydney.jpg', tileTitle : 'Sydney, Australia', tileText : ''}
+                    ]
+                };
+
+                $('#ijed-box').ijedTiles(options);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="ijed-box"></div>
+
+        <p>
+            <a href="index.html"><< Back</a>
+        </p>
+
+    </body>
+</html>

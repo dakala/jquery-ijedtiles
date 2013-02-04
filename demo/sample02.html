@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../jquery.ijedtiles.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                var options = {
+                    tilesHorizontalTotal : 6,
+                    tilesVerticalTotal : 1,
+                    tileWidth : 200,
+                    tileHeight : 400,
+                    items : [ {
+                            imgSrc : 'images/miekowo.jpg',
+                            tileTitle : 'Holy Trinity Church, Miekowo',
+                            tileText : "Miekowo is a small village/town near Goleniow in north-west Poland. The Holy Trinity Church was built in 1782 and its tower is three-storey high and crowned with a wavy metal peak. The building is in Baroque style with an oak beam frame. Its Gothic windows were added at the end of the 19th century and the stained glass windows and interior furnishings are from the 20th century."
+                        }, {
+                            imgSrc : 'images/wroclaw.jpg',
+                            tileTitle : 'Wroclaw Market Square',
+                            tileText : "The Main Square, 'Rynek' in Polish, is the heart of the city of Wroclaw. It's been in existence since the 13th century although the grand houses on all sides of the square have been reconstructed over the years. This is why there's a wide range of architecture present. During World War II, the square was nearly reduced to rubble but from those ashes, beauty has risen once again."
+                        }, {
+                            imgSrc : 'images/warsaw.jpg',
+                            tileTitle : 'Royal Castle, Warsaw',
+                            tileText : 'The Royal Castle in Warsaw is a castle residency and was the official residence of the Polish monarchs. It is located in the Castle Square, at the entrance to the Warsaw Old Town. The personal offices of the king and the administrative offices of the Royal Court of Poland were located there from the 16th century until the Partitions of Poland. The Constitution of 3 May 1791 was drafted here by the Four-Year Sejm.'
+                        } ]
+                };
+
+                $('#ijed-box').ijedTiles(options);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="ijed-box"></div>
+
+        <p>
+            <a href="index.html"><< Back</a>
+        </p>
+
+    </body>
+</html>
